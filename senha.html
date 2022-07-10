@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hash - Confirmação</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="imagem do icone">
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <div>
+        <form class="form-cont" method="POST" action="senha.php">
+            <label for="senha">Senha: </label>
+                <input class="text-input" type="text" name="senha" id="senha" placeholder="Senha"/><br>
+            <label for="hash">Hash: </label>
+                <input class="text-input" type="text" name="hash" id="hash" placeholder="Hash"/><br>
+                <input type="submit" class="botao btn-input" value="Verificar">
+        </form>
+        <section class="exemplo">
+            <p class="text-section">Pode fazer um teste com as informações abaixo:</p>
+            <p class="text-section">Senha: '123'</p>
+            <p class="text-section">Hash: '$2y$10$u7khMKf/eLYHrSxlT2Fu8.fObBGtyQ1XgzMcSEeMx8vAtwK8welca' </p>
+        </section>
+    </div>
+</body>
+</html>
+ 

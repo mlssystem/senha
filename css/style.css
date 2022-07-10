@@ -1,0 +1,150 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+
+:root {
+    --cinza-claro: #c3c3c3;
+    --cinza-escuro: #232526;
+    --cinza-escuro-opacity: rgba(35,37,38,0.7);
+    --bco-pacity: rgba(255,255,255,0.7);
+    --amarelo: #ffff00;
+    --vermelho: #f00;
+    --verde: #007800;
+    --preto: #121212;
+}
+
+body {
+    font-family: 'Fira Mono', monospace;
+    background: url("galaxia.jpg") no-repeat top center fixed;
+    background-size: cover;
+}
+
+.form-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 98%;
+    margin: auto;
+}
+
+
+textarea {
+    width: 100%; 
+    height: 100px; 
+    margin-bottom: 15px; 
+    padding: 13px;
+}
+
+.text-cript {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.text-input {
+    width: 100%;
+    padding: 7px;
+}
+
+.exemplo {
+    margin: 14px;
+    color: var(--cinza-escuro);
+    opacity: 0.8;
+}
+
+div::before {
+    content: " VERIFICADOR DE HASH ";
+    font-family: 'Fira Mono', monospace;
+    font-weight: bold;
+    color: var(--cinza-claro);
+    background-color: var(--cinza-escuro);
+    padding: 7px;
+    display: block;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    width: 666px;
+    border-radius: 3px 3px 5px 5px;
+}
+
+.codificar::before {
+    content: " CODIFICADOR DE TEXTO ";
+}
+
+.decodificar::before {
+    content: " DECODIFICADOR DE TEXTO ";
+}
+
+div {
+    background-color: var(--bco-pacity);
+    margin: 100px auto 100px auto;
+    border-radius: 3px;
+    padding: 10px;
+    width: 680px;
+    min-height:300px;
+}
+
+a {
+    color: var(--cinza-escuro);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Fira Mono', monospace;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+span.foco {
+    font-weight: bold;
+    color: var(--amarelo);
+    text-shadow: 1px 1px 1px var(--preto);
+}
+
+.botao {
+    background-color: var(--cinza-escuro);
+    color: var(--cinza-claro);
+    padding: 4px;
+    border: 1px solid var(--cinza-escuro);
+    border-radius: 7px;
+    box-shadow: 1px 1px 1px var(--cinza-escuro);
+    margin-top: 7px;
+    width: 20%;
+    transition: all 0.8s ease;
+}
+
+.botao:hover {
+    background-color: var(--cinza-escuro-opacity);
+    transition: all 0.5s ease;
+    color: var(--bco-pacity);
+    text-transform: uppercase;
+}
+
+.p-botao {
+    margin-top: 14px;
+}
+
+a.botao{
+    text-decoration: none;
+    padding: 4px;
+}
+
+.h2-php {
+    margin-bottom: 14px;
+}
+
+.p-invalido-php {
+    border: 1px solid var(--cinza-claro);
+    border-radius: 50px;
+    color: var(--vermelho);
+    padding: 7px;
+    margin: 4px 0;
+}
+
+.p-valido-php {
+    border: 1px solid var(--cinza-claro);
+    border-radius: 50px;
+    color: var(--verde);
+    padding: 7px;
+    margin: 4px 0;
+}
